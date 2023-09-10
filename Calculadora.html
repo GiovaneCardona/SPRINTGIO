@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CalculadoraCss.css">
+</head>
+
+<body>
+    <h1>Calculadora Financeira</h1>
+    <div class="conteiner">
+        <div class="quadrado1">
+            <div class="inputs">
+            
+                Número de clientes:<br>
+                <input class="input_qtdClientes" id="input_qtdClientes" type="number" placeholder="ex. 100"><br><br>
+
+                Número de equipamentos:<br>
+                <input class="input_equipamentos" id="input_equipamentos" type="number"><br><br>
+
+                Quanto é a mensalidade:<br>
+                <input class="input_valorMensal" id="input_valorMensal" type="number"><br><br>
+
+                <button onclick="calcular()" class="botão">Ver situação</button>
+
+            </div>
+        </div>
+        <div class="quadrado2">
+            <p class="paragrafo" id="paragrafo"></p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var valormensal = Number(input_valorMensal.value);
+        var clientes = Number(input_qtdClientes.value);
+        var equip = Number(input_equipamentos.value);
+        var porcentagem = (clientes * 0.41);
+        var valorperda = porcentagem * valormensal;
+    
+         paragrafo.innerHTML = `No mercado fitness, aproximadamente 25% dos usuários de academia desistem devido à falta de tempo, e outros 16% devido à
+ superlotação.<br><br> Isso quer dizer que nos próximos meses você poderá perder até ${porcentagem} clientes,resultando na perda de R$ ${valorperda}
+  reais.<br><br> Com base nesses dados, a Sensorize  criou um projeto chamado TechGym, o qual te ajudará a reter aproximadamente 47% dos seus clientes e
+   atrair muitos outros por causa da qualidade do serviço!`;
+        }
+
+
+</script>

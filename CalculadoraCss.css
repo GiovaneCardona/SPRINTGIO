@@ -1,0 +1,47 @@
+body{
+    background-color: #F4A460;
+}
+h1{
+    text-align: center;
+}
+.conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    margin-left: 50px;
+}
+.quadrado1{
+height: 400px;
+width: 400px;
+background-color: #98a9ba;
+border-radius: 20px;
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputs{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+.quadrado2{
+    height: 400px;
+width: 400px;
+background-color: #c1c4c8;
+border-radius: 20px;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+.paragrafo{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+
+}
+.botão{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
